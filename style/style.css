@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 200px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.header button {
+    font-family: Roboto, sans-serif;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(41, 41, 41);
+    padding: 6px 10px;
+}
+
+
+.content {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo,
+.menu,
+.form-block,
+.content-pictures,
+.small-pictures,
+.fields {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-picture {
+    min-width: 220px;
+    height: 90px;
+    background-color: rgb(162, 162, 162);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.logo-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+}
+
+.logo-content a {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu button {
+    background-color: rgb(97, 96, 96);
+    color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    padding: 15px;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(200, 199, 199);
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-block h2 {
+    font-weight: 200;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.form-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 55%;
+}
+
+.form-left label {
+    font-family: Roboto, sans-serif;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-left input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgb(97, 96, 96);
+    border-radius: 3px;
+}
+
+.more {
+    padding: 20px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 4px;
+    flex: 1;
+    max-width: 40%;
+}
+
+.more p:nth-child(2) {
+    font-weight: bold;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 25px;
+    margin-top: 15px;
+}
+
+.form-left button,
+.more button {
+    margin-top: 20px;
+    padding: 8px 15px;
+    background-color: rgb(56, 130, 161);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 5px 45px 5px 45px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.content-pictures {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.picture {
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.picture .image {
+    height: 90px;
+    background-color: rgb(162, 162, 162);
+}
+
+.picture .text {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.picture h2 {
+    font-family: Roboto, sans-serif;
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.picture p {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.small-pictures {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 10px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.small-pictures div {
+    background-color: rgb(89, 89, 89);
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(89, 89, 89);
+    gap: 10px;
+}
+
+.fields input {
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+
+.fields input:nth-child(-n+3) {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.fields input:nth-child(n+4) {
+    background-color: rgb(180, 180, 180);
+}
